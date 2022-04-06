@@ -4,6 +4,10 @@
     padding:0;
     box-sizing: border-box;
 }
+/* TYPO */
+body{
+    font-family: 'Montserrat', sans-serif;
+}
 /* COMMONS */
 .container{
     display: flex;
@@ -13,12 +17,12 @@ header{
     height: 100px;
     background-color: #080b12;
     text-align: right;
-    
 }
 main{
     height: calc(100vh - 200px);
     width: calc(100vw - 300px);
     background-color: #141922;
+    overflow-y: scroll;
 }
 footer{
     width: 100%;
@@ -29,4 +33,74 @@ aside{
     background-color: black;
     width: 300px;
     height: calc(100vh - 100px);
+    position: relative;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.white{
+    color: white;
+}
+.gray{
+    color: #656565;
+}
+
+.aside-content-top ul li, .aside-content-middle ul li{
+    list-style-type: none;
+    padding: 10px 0;
+}
+
+.fa-circle-user{
+    font-size: 40px;
+    vertical-align: middle;
+    padding-bottom: 5px;
+}
+.fa-house, .fa-magnifying-glass, .fa-lines-leaning{
+    font-size: 20px;
+    padding-right: 8px;
+    vertical-align: middle;
+}
+h3{
+    text-transform: uppercase;
+}
+ /* TOP PART ASIDE */
+.aside-content-top{
+    padding: 20px 20px;
+}
+.aside-content-top img{
+    height: 60px;
+    margin-bottom: 20px;
+}
+.v-line{
+    position: absolute;
+    left: 0;
+    top: 110px;
+    width: 5px;
+    height: 30px;
+    background-color: #adff2f;
+}
+/* CENTER PART ASIDE  */
+.aside-content-middle{
+    padding: 0 20px 0 20px;
+}
+.aside-content-middle ul li i {
+    padding: 10px;
+    background-color: #656565;
+    margin-right: 8px;
+}
+/* BOTTOM PART ASIDE  */
+.aside-content-bottom{
+    padding-left: 20px;
+    position: absolute;
+    bottom: 0;
+}
+.aside-content-bottom a{
+    padding-left: 8px;
+
+}
+.aside-content-bottom hr{
+    margin: 12px 0;
+    width: 260px;
+    background-color: #656565;
 }
