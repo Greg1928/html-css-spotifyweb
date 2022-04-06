@@ -28,7 +28,10 @@ footer{
     width: 100%;
     height: 100px;
     background-color: #282828;
-    z-index: 7;
+    display: flex;
+    padding: 0 10px;
+    align-items: center;
+    color: white;
 }
 aside{
     background-color: black;
@@ -131,4 +134,69 @@ nav{
     background-color: #adff2f;
     margin: auto;
     margin-top: 5px;
+}
+.footer-center{
+    width: 50%;
+    text-align: center;
+}
+.footer-center i{
+    margin: 0 20px;
+    font-size: 25px;
+}
+#far{
+    margin: 0 30px 0 30px;
+    font-size: 40px;
+}
+.footer-left, .footer-right{
+    width: 25%;
+}
+.footer-right{
+    text-align: right;
+}
+.footer-icon{
+    display: inline-block;
+}
+.footer-icon img{
+    height: 40px;
+}
+.footer-txt{
+    display: inline-block;
+    margin-left: 10px;
+}
+.fa-heart{
+    margin-left: 50px;
+    margin-right: 20px;
+    font-size: 20px;
+    vertical-align: super;
+}
+.fa-folder{
+    font-size: 20px;
+    vertical-align: super;
+}
+.minutes{
+    margin-top: 10px;
+}
+
+.bar{
+    width: 65%;
+    height: 5px;
+    display: inline-block;
+    background-color: #656565;
+    vertical-align: middle;
+    margin: 0 20px;
+}
+.bar-inside{
+    background-color: #c1c1c1;
+    height: 5px;
+    width: 20%;
+}
+.footer-right a{
+    margin-right: 10px;
+}
+.bar-volume{
+    background-color: #656565;
+    height: 5px;
+    display: inline-block;
+    vertical-align: middle;
+    width: 38%;
 }
