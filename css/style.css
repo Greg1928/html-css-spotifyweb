@@ -138,6 +138,7 @@ nav ul li{
 }
 nav{
     text-align: center;
+    margin-bottom: 40px;
 }
 .v-line-2{
     width: 40px;
@@ -211,11 +212,42 @@ nav{
     vertical-align: middle;
     width: 38%;
 }
-.main-nav{
+.main-content{
     width: calc(100% - 300px);
     padding-top: 80px;
     background-color: #141922;
+    overflow-y: auto;
 }
-.main-content{
-    overflow-y: y;
+.row{
+    display: flex;
+    padding: 0 20px
+}
+.box{
+    width: calc(100% / 6);
+    margin: 40px 0;
+    text-align: center;
+    cursor: pointer;
+}
+.box img{
+    height: 200px;
+    width: 90%;
+}
+h1{
+    margin-left: 30px;
+    margin-bottom: 15px;
+}
+.box h4{
+    color: white;
+    margin-top: 15px;
+}
+.box p{
+    margin-top: 10px;
+    color: #656565;
+    font-weight: bold;
+}
+#radius{
+    border-radius: 100%;
+}
+#fix{
+    margin-left: 30px;
 }
