@@ -263,13 +263,15 @@ h1{
 .footer-center{
     width: 50%;
     text-align: center;
+    display: flex;
+    flex-direction: column;
 }
 .footer-center i{
-    margin: 0 20px;
-    font-size: 25px;
+    padding: 0 10px;
+    font-size: 20px;
 }
 #far{
-    margin: 0 30px 0 30px;
+    margin: 0 10px 0 10px;
     font-size: 40px;
 }
 .footer-right{
@@ -298,12 +300,11 @@ h1{
     margin-left: 10px;
     justify-content: center;
 }
-.fa-heart{
-    
-}
 .minutes{
     margin-top: 10px;
     position: relative;
+}
+.footer-nav{
 }
 
 .bar{
@@ -312,7 +313,7 @@ h1{
     display: inline-block;
     background-color: #656565;
     vertical-align: middle;
-    margin: 0 20px;
+    margin: 0 10px;
     cursor: pointer;
 }
 .bar-inside{
@@ -378,5 +379,28 @@ h1{
 @media screen and (max-width: 1100px){
     .box {
         width: calc(100% / 4);
+    }
+}
+
+/* 700px BREAKPOINT */
+
+@media screen and (max-width: 700px){
+    .box {
+        width: calc(100% / 2);
+    }
+    .footer-center i{
+        padding: 0 5px;
+        font-size: 15px;
+    }
+    #far{
+        margin: 0 5px 0 5px;
+        font-size: 30px;
+    }
+    .bar{
+        width: 50%;
+        margin: 0;
+    }
+    .footer-left{
+        width: 40%;
     }
 }
