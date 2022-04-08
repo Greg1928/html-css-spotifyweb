@@ -191,7 +191,8 @@ nav{
 }
 .row{
     display: flex;
-    padding: 0 20px
+    padding: 0 20px;
+    flex-wrap: wrap;
 }
 .box{
     width: calc(100% / 6);
@@ -271,31 +272,34 @@ h1{
     margin: 0 30px 0 30px;
     font-size: 40px;
 }
-.footer-left, .footer-right{
+.footer-right{
     width: 25%;
+}
+.footer-left{
+    width: 25%;
+    display: flex;
+}
+.footer-left-icon{
+    display: flex;
+    flex-direction: column;
+    margin-left: 40px;
+    font-size: 20px;
 }
 .footer-right{
     text-align: right;
 }
-.footer-icon{
-    display: inline-block;
-}
-.footer-icon img{
-    height: 40px;
+.footer-logo img{
+    height: 50px;
+    vertical-align: middle;
 }
 .footer-txt{
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
     margin-left: 10px;
+    justify-content: center;
 }
 .fa-heart{
-    margin-left: 50px;
-    margin-right: 20px;
-    font-size: 20px;
-    vertical-align: super;
-}
-.fa-folder{
-    font-size: 20px;
-    vertical-align: super;
+    
 }
 .minutes{
     margin-top: 10px;
@@ -368,3 +372,11 @@ h1{
 
 }
 
+/* RESPONSIVE */
+
+/* 1100px BREAKPOINT  */
+@media screen and (max-width: 1100px){
+    .box {
+        width: calc(100% / 4);
+    }
+}
